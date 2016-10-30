@@ -1,0 +1,17 @@
+var X, Y;
+
+procedure INICIAR;
+  const Y = 2;
+  procedure ASIGNAR;
+    BEGIN
+    	X := Y;
+  	END;
+  BEGIN
+  	call ASIGNAR;
+  END;
+  
+begin
+  write ('NUM='); readln (Y);
+  call INICIAR;
+  writeln ('NUM*2=',Y*X)
+end.
